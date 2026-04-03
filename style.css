@@ -40,6 +40,8 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
+    width: 100%;
 }
 
 body {
@@ -48,6 +50,7 @@ body {
     color: var(--text-primary);
     line-height: 1.6;
     overflow-x: hidden;
+    width: 100%;
     position: relative;
 }
 
@@ -305,6 +308,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .glass-orb {
@@ -637,6 +641,13 @@ a {
     .glass-orb {
         width: 280px;
         height: 280px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .blob {
+        display: none; /* Hide large blobs on mobile to prevent overflow */
     }
 
     .section-title {
